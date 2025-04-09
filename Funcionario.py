@@ -17,5 +17,8 @@ class Funcionario:
         self.bonus = max(0, self.bonus - penalidade)  
     
     def get_id(self):
-        
+        return id_funcionario
+
+    def 
+
         
