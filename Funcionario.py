@@ -11,3 +11,11 @@ class Funcionario:
 
     def adicionar_bonus(self, valor):
         self.bonus += valor
+
+    def recalcular_bonus(self):
+        penalidade = self.faltas * 50
+        self.bonus = max(0, self.bonus - penalidade)  
+    
+    def get_id(self):
+        
+        

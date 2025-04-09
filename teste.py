@@ -13,9 +13,8 @@ class Funcionario:
         self.bonus += valor
 
     def recalcular_bonus(self):
-        # Subtraindo uma penalidade com base no número de faltas
-        penalidade = self.faltas * 50  # Exemplo: penalidade de 50 por falta
-        self.bonus = max(0, self.bonus - penalidade)  # Evita bônus negativo
+        penalidade = self.faltas * 50  
+        self.bonus = max(0, self.bonus - penalidade)  
 
     def get_id(self):
         return self.id_funcionario
